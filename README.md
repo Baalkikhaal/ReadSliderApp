@@ -1,0 +1,115 @@
+# PyQt basics tutorial
+
+---
+
+# What is the tutorial about?
+
+This repository takes a step-by-step tour of creating a responsive PyQt5 app.
+
+Let us first understand the basics of PyQt;
+
+- creating widgets
+- laying out widgets
+- creating signal and slots
+
+---
+
+# PyQt5: What is it?
+
+- PyQt5 is a Python binding for Qt5 framwork. It provides wrappers for around 600 classes of Qt5
+- let us focus on the User Interface. However PyQt provides wrappers  various other Qt tools like
+requests handling, drawing, etc
+- Qt employs a hierarchial object oriented framework where every object inherits from the QtObject;
+base class
+- User interface objects inherit from QWidget class, child of the QObject class
+- Various objects like QLineEdit, QSlider, QComboBox, QGroup Box are there
+- A widget can nest in another widget enabling a Matroshka style of interface
+
+---
+
+# PyQt: Hello world
+
+- Some text here
+
+---
+
+# PyQt: Creating a widget
+
+- Some text here
+
+---
+
+# PyQt: Creating a layout
+
+- Some text here
+
+---
+
+# PyQt: Styling the interface
+
+- Some text here
+
+---
+
+# PyQt: Creating signals and slots
+
+- Some text here
+
+---
+
+# ReadSlider: 0
+
+- My first PyQt app 
+- In this tutorial, let us progressively build a PyQt App in which we read
+the state value (the slider Position) of a QWidget like Slider
+and write the state value to another QWidget like the QTextEdit.
+- Step 0: Create a slider object
+
+---
+
+# ReadSlider: 1
+
+- Step 1: I do not know how to get the state value of the slider.
+Instead let me try it with QLineEdit. So create a pair of LineEdit in a 
+Vertical Box Layout
+
+---
+
+# ReadSlider: 2
+
+- Step 2: Slot one of the LineEdit's signal to the slot of other LineEdit
+and vice versa
+
+---
+
+# ReadSlider: 3
+
+- Step 3: Read the LineEdit value and print to standard output
+
+---
+
+# ReadSlider: 4
+
+- Step 4: Finally 
+Create the Slider and LineEdit widgets.
+Read the slider value and writer to the line Edit widget.
+
+---
+
+# ReadSlider: Freeze the app
+
+- In Pythonic world, freezing is creating self-contained executable (packaging) from source code.
+ This involves compiling, linking, including and building binaries
+- There are various libraries to handle freezing like py2exe, py2app. Freezing PyQt apps is a hard problem
+- [fbs](https://github.com/mherrmann/fbs) fman's  build system helps in freezing PyQt GUI apps;
+ fman is the next generation file manager for programmers.
+
+  fbs startproject
+  fbs run
+  fbs freeze
+
+---
+
+# ReadSlider: Create installer
+
+  fbs installer

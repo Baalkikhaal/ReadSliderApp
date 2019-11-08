@@ -432,6 +432,8 @@ If we are satisfied with the app, we can freeze the app to create a self contain
 
 add image of the running app window  #TODO  
 
+![App](images/ReadSlider.gif)
+
 ---
 
 # ReadSlider: Create installer
